@@ -1,8 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Descripci\IeC {\'o}n}{3}{0}{1}
-\beamer@sectionintoc {2}{Factor Equilibrio}{5}{0}{2}
-\beamer@sectionintoc {3}{Rotaciones}{6}{0}{3}
-\beamer@subsectionintoc {3}{1}{Rotaci\IeC {\'o}n simple a la derecha}{6}{0}{3}
-\beamer@subsectionintoc {3}{2}{Rotaci\IeC {\'o}n simple a la izquierda}{7}{0}{3}
-\beamer@subsectionintoc {3}{3}{Rotaci\IeC {\'o}n doble a la derecha}{8}{0}{3}
-\beamer@subsectionintoc {3}{4}{Rotaci\IeC {\'o}n doble a la izquierda}{10}{0}{3}
