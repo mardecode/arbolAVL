@@ -1,0 +1,151 @@
+\documentclass{beamer}
+%\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+
+\usetheme{Warsaw}
+\usecolortheme{seahorse}
+\useoutertheme{shadow}
+\useinnertheme{rectangles}
+
+\title[AVLtree]{AVL Tree}
+\author[ALMA\and *Alexis\and Luis \and Margarita \and Ademir*]{{Bernal Chauayo, Luis Antonio}\\{Lacuaña Apaza, Margarita}\\{Mendoza Villarroel, Alexis}\\{Villena Zevallos, Ademir}}
+\institute{{Ciencia de la Computación}
+\\{Universidad Nacional de San Agustin}}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+  \end{frame}
+ 
+\begin{frame}
+    \frametitle{Índice}
+    \tableofcontents
+\end{frame}
+ 
+ \section{Descripción}
+
+\begin{frame}
+    \frametitle{Descripción}
+    Un árbol AVL es un tipo especial de árbol binario ideado por los matemáticos rusos \textbf{A}delson-\textbf{V}elskii y \textbf{L}andis.
+    Fue el primer árbol binario autobalanceable que se ideó.
+    \\
+    \begin{center}
+    .\\ 
+    \ttfamily{ \textbf{"An algorithm for the organization of information"} }
+    \end{center}
+    
+\end{frame}
+
+\begin{frame}
+  \frametitle{Definición}
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics [width =1 \textwidth ]{imagenes/arbolNoBalanceado.png}
+      \begin{center}
+      Árbol no balanceado.
+      \end{center}
+
+    \column{0.5\textwidth}
+      \includegraphics [width =1 \textwidth ]{imagenes/arbolBalanceado.png}
+      \begin{center}
+      Árbol balanceado.
+      \end{center}
+  \end{columns}
+\end{frame}
+
+\section{Factor Equilibrio}
+\begin{frame}
+  \frametitle{Factor Equilibrio}
+  El factor de equilibrio es la diferencia entre las alturas del árbol derecho y el izquierdo:\\
+  \begin{center}
+  \ttfamily{ \textbf{FE = A subárbol derecho - A subárbol izquierdo }}
+  \end{center}
+  Para un árbol AVL, este valor debe ser -1, 0 ó 1.
+  \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolFE.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolFE2.png}
+   \end{columns}
+\end{frame}
+
+\section{Rotaciones}
+
+  \subsection{Rotación simple a la derecha}
+  \begin{frame}
+    \frametitle{Rotación simple a la derecha}
+    Cuando el sub-árbol izquierdo tiene mas peso que el derecho,  entonces se produce la RSD.
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRSD1.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRSD2.png}
+   \end{columns}
+  \end{frame}
+  
+   \subsection{Rotación simple a la izquierda}
+  \begin{frame}
+    \frametitle{Rotación simple a la izquierda}
+    Cuando el sub-árbol derecho tiene mas peso que el izquierdo se produce la RSI.
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =1.2 \textwidth]{imagenes/arbolRSI1.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRSI2.png}
+   \end{columns}
+  \end{frame}
+
+   \subsection{Rotación doble a la derecha}
+  \begin{frame}
+    \frametitle{Rotación doble a la derecha}
+    Cuando el sub-árbol izquierdo tiene mas peso que el derecho y el FE es de signo contrario.
+    \begin{center}
+      \ttfamily{ \textbf{RDD = RSI + RSD }}
+    \end{center}
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD1.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD2.png}
+   \end{columns}
+  \end{frame}
+  
+  \begin{frame}
+    \frametitle{Rotación doble a la derecha}
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD3.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =0.7 \textwidth]{imagenes/arbolRDD4.png}
+   \end{columns}
+    \begin{center}
+      \includegraphics[width =0.4 \textwidth]{imagenes/arbolRDD5.png}
+    \end{center}
+  \end{frame}
+  
+  \subsection{Rotación doble a la izquierda}
+  \begin{frame}
+    \frametitle{Rotación doble a la izquierda}
+    Cuando el sub-árbol derecho tiene mas peso que el izquierdo y el FE es de signo contrario.
+    \begin{center}
+      \ttfamily{ \textbf{RDI = RSD + RSI }}
+    \end{center}
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD1.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD2.png}
+   \end{columns}
+  \end{frame}
+ 
+
+\end{document}
