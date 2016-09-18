@@ -140,11 +140,25 @@
     \end{center}
     \begin{columns}[t]
     \column{0.5\textwidth}
-      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD1.png}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRDI1.png}
       
     \column{0.5\textwidth}
-      \includegraphics[width =0.8 \textwidth]{imagenes/arbolRDD2.png}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRDI2.png}
    \end{columns}
+  \end{frame}
+  
+   \begin{frame}
+    \frametitle{Rotación doble a la izquierda}
+    \begin{columns}[t]
+    \column{0.5\textwidth}
+      \includegraphics[width =1 \textwidth]{imagenes/arbolRDI3.png}
+      
+    \column{0.5\textwidth}
+      \includegraphics[width =1.1 \textwidth]{imagenes/arbolRDI4.png}
+   \end{columns}
+    \begin{center}
+      \includegraphics[width =0.43 \textwidth]{imagenes/arbolRDI5.png}
+    \end{center}
   \end{frame}
  
 
